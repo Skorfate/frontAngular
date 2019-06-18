@@ -1,0 +1,67 @@
+.flexcontainerCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+ 
+ }
+
+.item{
+    width:  100px;
+    height: 100px;
+    background-color: red;
+    flex-direction: column;
+}
+
+
+
+.dotBlue {
+    height: 8px;
+    width: 8px;
+    background-color:blue;
+    border-radius: 50%;
+    margin: 2px;
+    display: inline-block;
+}
+
+.dotYellow {
+    height: 8px;
+    width: 8px;
+    background-color:yellow;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+}
+
+.dotGreen {
+    height: 8px;
+    width: 8px;
+    background-color:green;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+}
+
+.dotRed {
+    height: 8px;
+    width: 8px;
+    background-color:red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+}

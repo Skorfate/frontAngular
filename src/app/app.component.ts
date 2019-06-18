@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './component/Home.component';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

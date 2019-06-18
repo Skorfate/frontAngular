@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Overpass';
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+.titulo{
+    font-size: 45px;
+    margin : 0;
+}
+
+ .subtitulo p{
+    font-size: 34px;
+    margin : 0;
+    
+}
+
+div span .nombre{
+    font-size: 24px;
+}
+
+div span .tituloCarac{
+    font-size: 16px;
+}
+
+div span .característica{
+    font-size: 20px;
+}
+

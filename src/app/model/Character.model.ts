@@ -13,4 +13,8 @@ export class Character {
     vehicles: string;
     starships: string;
     films: string;
+
+    constructor(values: Object = {}) {
+        Object.assign(this, values);
+      }
 }

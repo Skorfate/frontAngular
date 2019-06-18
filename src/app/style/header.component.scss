@@ -1,0 +1,71 @@
+@media (min-width: 992px){
+.logohome a img {
+    max-height: 57px;
+    padding-left: 76px;
+    margin-top: 15px;
+    }
+}
+
+@media (max-width: 991px){
+    .logohome a img {
+        max-height: 45px;
+        padding-left: 50px;
+        margin-top: 15px;
+        }
+    }
+.back {
+        background-image: url("./../../assets/image/star-wars.png");
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+}
+
+.flex-container-text{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-container-sub{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-textTitulo1 {
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;    
+    line-height: 150px;
+    text-align: center;
+    order : 1;
+}
+
+.item-subtitulo{
+    text-align: center;
+    
+}
+.titulo-verde{
+    margin-top: 60px;
+color: green;
+}
+
+.buttonMas{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+     border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 7px 15px 15px 10px;
+}
