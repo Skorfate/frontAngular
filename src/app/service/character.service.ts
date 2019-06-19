@@ -18,15 +18,20 @@ export class CharacterService {
             let ch = new Character(character);
             console.log('ch', ch);
             return ch;
-        });
+        }).catch(this.handleError);
     }
 
     getDarthVader(): Observable<Character> {
-        return this._http.get(API_URL + '/api/luke').map(response => {
+        return this._http.get(API_URL + '/api/darthVader').map(response => {
             const character = response;
             let ch = new Character(character);
             console.log('ch', ch);
             return ch;
-        });
+        }).catch(this.handleError);
     }
+
+    private handleError (error: Response | any) {
+        console.error('error Servicer', error);
+        return Observable.throw(error);
+      }
 }

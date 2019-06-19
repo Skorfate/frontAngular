@@ -3,6 +3,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
 }
 
 .flex-row {
@@ -14,21 +17,74 @@
 
 .flexcontainer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-content: center;
+   align-items: center;
+   justify-content: center;
+   
+   /* You can set flex-wrap and
+      flex-direction individually */
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* Or do it all in one line
+     with flex flow */
+  // flex-flow: row wrap;
+   /* tweak where items line
+      up on the row
+      valid values are: flex-start,
+      flex-end, space-between,
+      space-around, stretch */
+   align-content: center;
+    
  
  }
 
 .item{
-    width:  100px;
-    height: 100px;
-    background-color: red;
-    flex-direction: column;
+    width:  50%;
+    height: 100&;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+.item > .caracteristica {
+    color: grey;
+    font-size: 20px;
+    display:block;
+}
+
+.item > .name{
+    color: grey;
+    font-size: 24px;
+    display:block;
+}
+
+.item > label{
+    color: grey;
+    font-size: 16px;
+    display:block;
 }
 
 
+.img{
+    height:150px;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    border: 10px solid #FFF; 
+    
+    margin-bottom: 10px;
+}
+
+.border-color-green{
+    box-shadow: 0 0 0px 2px green;
+}
+
+.border-color-red{
+    box-shadow: 0 0 0px 2px red;
+}
 
 .dotBlue {
     height: 8px;
@@ -65,3 +121,13 @@
     display: inline-block;
     margin: 2px;
 }
+ .body{
+     margin-top : 20px;
+ }
+
+ .link{
+     color: blue;
+     font-size: 10px;
+     text-decoration: none;
+     margin-top: 10px;
+ }

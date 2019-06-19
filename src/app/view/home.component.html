@@ -1,16 +1,52 @@
-<div>
+<div class="body">
         <div class="flexcontainerCenter">
                 <span class="dotBlue"></span>
                 <span class="dotRed"></span>
                 <span class="dotGreen"></span>
                 <span class="dotYellow"></span>
         </div>
+        <div class="flexcontainerCenter">
+                <span class="titulo">Personajes de Star Wars</span>
+        </div>
 
         <div class="flexcontainer">
-                        <div class="item">hola</div>
-                        <div class="item">hola</div>
-                        <div class="item">hola</div>
-                        <div class="item">hola</div>
+                <div class="item">
+                        <div>
+                                <img class="img border-color-green" [src]="urlImgLuke" />
+                        </div>
+                        <span class="name">{{characterLuke.name}}</span>
+                        <label>Estatura</label>
+                        <span class="caracteristica">{{characterLuke.height}}cms</span>
+                        <label>Planeta</label>
+                        <span class="caracteristica">{{characterLuke.homeworld}}</span>
+                        <label>Naves</label>
+
+                        <span class="caracteristica" *ngFor="let nave of characterLuke.starships">                               
+                                {{nave}}                                
+                        </span>
+                        <a class="link" href="#" >CONOCE MAS</a>
+                </div>
+                <div class="item">
+                        <div >
+                                <img class="img border-color-red" [src]="urlImgDarth" />
+                        </div>
+                        <span class="name">{{characterDarthVader.name}}</span>
+                        <label>Estatura</label>
+                        <span class="caracteristica">{{characterDarthVader.height}}cms</span>
+                        <label>Planeta</label>
+                        <span class="caracteristica">{{characterDarthVader.homeworld}}</span>
+                        <label>Naves</label>
+
+                        <span class="caracteristica" *ngFor="let nave of characterDarthVader.starships">                               
+                                {{nave}}                                
+                        </span>
+
+                        <a class="link" href="#" >CONOCE MAS</a>
+                </div>
+                
+                
+
+
         </div>
 
         <div class="flexcontainerCenter">
